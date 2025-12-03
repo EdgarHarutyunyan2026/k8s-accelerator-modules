@@ -27,6 +27,7 @@ module "eks-cluster" {
 module "node-group" {
   source                    = "./modules/eks/node_group"
   cluster_count             = var.aws_cluster_count
+  node_instance_types       = var.node_instance_types
   cluster_name              = module.eks-cluster.eks_cluster_name
   node_group_name           = var.node_group_name
   node_role_arn             = module.eks_worker_role.role_arn
