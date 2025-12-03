@@ -27,7 +27,3 @@ variable "grafana_repository" {
 variable "grafana_create_namespace" {
   default = true
 }
-
-variable "helm_provider" {
-  default = ""
-}
