@@ -30,6 +30,9 @@ module "node-group" {
   node_instance_types       = var.node_instance_types
   cluster_name              = module.eks-cluster.eks_cluster_name
   node_group_name           = var.node_group_name
+  node_min_size             = var.node_min_size
+  node_max_size             = var.node_max_size
+  node_desired_size         = var.node_desired_size
   node_role_arn             = module.eks_worker_role.role_arn
   subnet_ids                = module.vpc.subnet_id
   source_security_group_ids = [module.eks-sg.sg_id]
