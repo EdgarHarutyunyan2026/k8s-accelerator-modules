@@ -44,27 +44,3 @@ variable "min_node_count" {
 variable "max_node_count" {
   default = 4
 }
-
-#======== HELM APPLICATIONS =======
-
-variable "ebs_driver_count" {
-  default = 1
-}
-
-variable "grafana_count" {
-  default = 1
-}
-
-variable "cert_meneger_count" {
-  default = 1
-}
-
-variable "argo_cd_count" {
-  default = 1
-}
-
-variable "nginx_controler_count" {
-  default = 1
-}
-
-
